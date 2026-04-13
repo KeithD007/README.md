@@ -108,3 +108,15 @@ a.	Update on call schedules
 b.	Add or remove staff
 
 c.	Review alert log
+
+---
+
+### Version 2.0 (Week 4)
+
+- Set up Android Studio project
+  
+- Added XML layout (TextView, Button)
+  
+- Started UI structure
+  
+- Pushed project to GitHub
