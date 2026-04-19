@@ -120,3 +120,55 @@ c.	Review alert log
 - Started UI structure
   
 - Pushed project to GitHub
+
+## Current Implementation Week 7
+
+The application has been developed into a working multi-screen Android app using Java and Android Studio. The following features are currently implemented:
+
+### Screens
+- Login Screen (MainActivity)
+- Department Selection Screen (DepartmentActivity)
+- Page Type Selection Screen (PageTypeActivity)
+- Confirmation Screen (ConfirmActivity)
+
+### Core Features
+- User login with basic validation (username and password fields)
+- Selection of on-call role:
+  - CT Technologist
+  - Cath Lab Team
+  - Radiologist
+  - Supervisor
+- Selection of page priority:
+  - Routine
+  - Urgent
+  - Emergency
+- Confirmation screen displaying selected role and page type
+- Ability to send:
+  - SMS messages using Android Intent
+  - Email messages using Android Intent
+- Navigation between screens using Intents
+- Back navigation to return to department selection
+
+### App Flow
+Login → Department Selection → Page Type → Confirmation → Send Page
+
+### Technical Concepts Used
+- Java programming
+- Android Activities and lifecycle
+- Intents for screen navigation
+- Implicit Intents for SMS and Email
+- XML layouts for UI design
+- Toast messages for user feedback
+
+### Limitations
+- No real backend or database connection
+- Contact information is not dynamically stored
+- SMS and Email rely on external apps
+- No authentication validation beyond basic input checking
+
+### Future Improvements
+- Connect to a real backend database for on-call schedules
+- Add secure authentication
+- Store and manage contact information dynamically
+- Add escalation logic if no response is received
+
