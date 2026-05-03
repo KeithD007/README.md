@@ -1,12 +1,8 @@
 # On-Call Paging App for Android
 ## Project Description
-A.	The proposed term project is an Android-based on-call paging application designed for hospital use.
+The On-Call Paging App is an Android-based application designed for hospital environments to improve communication during urgent and emergency situations. The application allows healthcare staff to quickly page on-call personnel without relying on manual phone calls or searching through call schedules.
 
-B.	The purpose of the app is to allow staff to quickly page on call personnel during urgent or emergency situations without relying only on manual phone calls.
-
-C.	The app will provide a centralized way to select the needed role, such as CT technologist, Cath lab team, radiologist, or supervisor, and send a page or alert to the appropriate on-call person.
-
-D.	The project will focus on creating a simple, efficient, and user-friendly communication tool for emergency staffing needs.
+The app provides a centralized interface where users can select a specific role, such as CT technologist, Cath lab team, radiologist, or supervisor, and send an alert directly to the appropriate on-call individual. The goal of the project is to create a simple, efficient, and user-friendly communication tool that improves response time and workflow efficiency in healthcare settings.
 
 ---	
 ## Problem Addressing
