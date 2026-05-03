@@ -6,64 +6,61 @@ The app provides a centralized interface where users can select a specific role,
 
 ---	
 ## Problem Addressing
-A.	In many hospital departments, staff must manually look up on call schedules and place individual phone calls when emergency coverage is needed.
+In many hospital departments, contacting on-call staff is a manual and time-consuming process. Staff must locate schedules, make phone calls, and often repeat the process if the first contact does not respond. This leads to delays in communication, workflow inefficiencies, and potential impacts on patient care.
 
-B.	This process can waste time, especially when the first person does not answer or when multiple people need to be contacted.
-
-C.	Delays in reaching the correct staff member may affect workflow, patient care, and response time in urgent situations.
-
-D.	The app addresses this problem by organizing on-call information and making it possible to send a page or alert quickly from one interface.
-
-E.	This project supports the broader idea that modern applications are usually connected and should be designed to support communication, data access, and scalable workflows.
+The application addresses this problem by organizing on-call roles into a single interface and allowing users to quickly send alerts. By reducing the time needed to contact staff, the app improves response times and supports more efficient clinical workflows.
 
 ---
 ## Platform
-A.	The primary platform for the app will be Android.
-
-B.	The app will be designed for smartphones and tablets commonly used by hospital staff.
-
-C.	MIT App Inventor can support the early prototype because it is a browser-based tool for building Android apps and testing them without requiring a fully traditional coding environment.
-
-D.	If expanded in the future, the concept could also be adapted for iOS or web access.
+Android (Primary Platform)
+Developed using Android Studio
+Designed for smartphones and tablets used in healthcare environments
+Future expansion may include iOS or web-based platforms
 
 ---
 ## Front End and Back End Support
 ### Front End Support
-
-a.	The front end will include the user interface hospital staff will interact with.
-
-b.	Screens may include login, on-call department selection, staff list, paging screen, and confirmation screen.
-
-c.	The design should be simple and fast because users may be under pressure during emergency situations.
+####	 XML-based user interface design
+####	Simple, clean layout for fast navigation
+####	Multi-screen structure for ease of use under pressure
+####	Screens include:
+#####	Login
+#####	Department selection
+#####	Page type selection
+#####	Confirmation
 	
-### Back End Support
----
-
-a.	The back end will store on call schedules, staff contact information, and paging records.
-
-b.	It may use a cloud-connected database or web services, so data can be updated without reinstalling the app.
-
-c.	A connected back end fits the cloud-ready application concept because the app should separate user interaction from the services and data supporting it.
-
-d.	In a future real-world version, the back end could connect with hospital scheduling systems, secure messaging tools, or directory services.
-
+### Back End Support (Current and Future)
+####	Current version does not include a live backend
+####	Uses Android Intents for communication (SMS and Email)
+####	Future implementation may include:
+####	Cloud-based database
+####	Real-time on-call scheduling
+####	Integration with hospital systems
 ---
 ## Functionality
-A.	User login or secure staff access
-
-B.	View departments or roles currently on call
-
-C.	Search for staff by role or specialty
-
-D.	Send page or alert to selec ted on call staff members
-
-E.	Receive delivery confirmation
-
-F.	Record date, time, and recipient of each page
-
-G.	Escalation option if the first alert is not answered
-
-H.	Optional future features: shift management, administrator editing tools, priority levels of alerts
+### Current Features
+####	User login with basic validation
+####	Selection of on-call roles:
+#####		CT Technologist
+#####		Cath Lab Team
+#####		Radiologist
+#####		Supervisor
+####	Selection of page priority:
+#####		Routine
+#####		Urgent
+#####		Emergency
+####	Multi-screen navigation using Intents
+####	Confirmation screen displaying selected options
+####	Ability to send:
+#####		SMS messages
+#####		Email messages
+####	Back navigation between screens
+### Future Features
+####	Real-time on-call integration
+####	Secure authentication system
+####	Escalation if no response is recieved
+####	Admin tools for schedule management
+####	Push notifications
 
 ---
 ## Design and Wireframes
@@ -107,64 +104,40 @@ c.	Review alert log
 
 ---
 
-### Version 2.0 (Week 4)
+## Current Implemenation (Week 8)
+The application is a functional multi-screen Android app developed using Java and Android Studio.
 
-- Set up Android Studio project
-  
-- Added XML layout (TextView, Button)
-  
-- Started UI structure
-  
-- Pushed project to GitHub
-
-## Current Implementation Week 7
-
-The application has been developed into a working multi-screen Android app using Java and Android Studio. The following features are currently implemented:
-
-### Screens
+### Implemented Screens
 - Login Screen (MainActivity)
 - Department Selection Screen (DepartmentActivity)
 - Page Type Selection Screen (PageTypeActivity)
 - Confirmation Screen (ConfirmActivity)
-
-### Core Features
-- User login with basic validation (username and password fields)
-- Selection of on-call role:
-  - CT Technologist
-  - Cath Lab Team
-  - Radiologist
-  - Supervisor
-- Selection of page priority:
-  - Routine
-  - Urgent
-  - Emergency
-- Confirmation screen displaying selected role and page type
-- Ability to send:
-  - SMS messages using Android Intent
-  - Email messages using Android Intent
-- Navigation between screens using Intents
-- Back navigation to return to department selection
-
-### App Flow
-Login → Department Selection → Page Type → Confirmation → Send Page
-
+  
 ### Technical Concepts Used
 - Java programming
 - Android Activities and lifecycle
-- Intents for screen navigation
+- Intents for navigation
 - Implicit Intents for SMS and Email
-- XML layouts for UI design
-- Toast messages for user feedback
+- XML layouts
+- Toast messages for feedback
+  
+### Application Flow
+Login → Department Selection → Page Type → Confirmation → Send Page
 
 ### Limitations
-- No real backend or database connection
-- Contact information is not dynamically stored
-- SMS and Email rely on external apps
-- No authentication validation beyond basic input checking
-
+- No backend database connection
+- Contact data is not dynamically stored
+- Relies on external apps for SMS and Email
+- Basic authentication only
+  
 ### Future Improvements
-- Connect to a real backend database for on-call schedules
-- Add secure authentication
+- Integrate backend database for real-time schedules
+- Implement secure login system
 - Store and manage contact information dynamically
-- Add escalation logic if no response is received
+- Add escalation logic for unanswered pages
+- Improve UI/UX design
+- Version Control
+
+All updates and improvements are documented in the CHANGELOG.md file.
+
 
