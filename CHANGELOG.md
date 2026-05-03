@@ -9,21 +9,26 @@
   - Updated AndroidManifest.xml to register new activity
 
 ## Version 3.0, Week 6
-- Expanded the project concept to include SMS and email communication options
-- Added location-based service ideas for future app enhancement
-- Updated the app outline to reflect web services and JSON support
-- Revised planned screens and functionality to better match current course content
+- Added
+  - Expanded communication features to include SMS and email options
+  - Introduced concept for location-based services for future enhancement
+- Updated
+  - Revised project outline to include web services and JSON support
+  - Updated application design and planned functionality to align with course concepts
 
 ## Version 2.0, Week 4 Update
-- Began Android Studio project setup
-- Added basic XML layout elements such as TextView and Button
-- Started building the UI structure based on wireframes
-- Introduced navigation concepts between screens
-- Updated GitHub repository files and README
+- Added
+  - Set up Android Studio project environment
+  - Created initial XML layout elements including TextView and Button
+- Updated
+  - Began building user interface based on wireframes
+  - Introduced basic navigation between screens
+  - Updated GitHub repository and README documentation
 
 ## Version 1.0, Week 2 Update
-- Created the initial project idea and outline
-- Defined the business problem and project purpose
-- Identified target users
-- Developed initial wireframes
-- Created the GitHub repository
+- Added
+  - Defined initial project concept and outline
+  - Identified business problem and project purpose
+  - Identified target users
+  - Created initial wireframes
+  - Established GitHub repositor
